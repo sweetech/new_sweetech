@@ -1,12 +1,52 @@
-#banner_list li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 20px;
-	background-color: gray;
-	padding-left: 5px;
+div#header2 {
+	background-color: #09F;
+	float: right;
+	position: relative; 
+	width: 100%;
+}
+/*style the main menu*/
+.myMenu {
+	margin:0;
+	padding:0;
 }
 
-a {
-	text-decoration: none;
-	color: black;
+.myMenu li {
+	list-style:none;
+	float:left;
+	font:12px Arial, Helvetica, sans-serif #111;
+}
+
+.myMenu li a:link, .myMenu li a:visited {
+	display:block;
+	text-decoration:none;
+	background-color:#09F;
+	padding: 0.5em 2em;
+	margin:0;
+}
+
+.myMenu li a:hover {
+	background-color:#0CF;	
+}
+
+/*style the sub menu*/
+.myMenu li ul {
+	position:absolute;
+	visibility: hidden;
+	border-top:1px solid #fff;
+	margin:0;
+	padding:0;
+}
+
+.myMenu li ul li {
+	display:inline;
+	float:none;
+}
+
+.myMenu li ul li a:link, .myMenu li ul li a:visited {
+	background-color:white;
+	width:auto;
+}
+
+.myMenu li ul li a:hover {
+	background-color:#0CF;	
 }
